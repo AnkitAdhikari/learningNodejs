@@ -1,6 +1,9 @@
 const express = require("express");
 const app = express();
 
+// requiring database
+require("./model/index");
+
 app.set("view engine", "ejs");
 
 app.get("/", (req, res) => {
